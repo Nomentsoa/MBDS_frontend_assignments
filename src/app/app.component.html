@@ -1,0 +1,17 @@
+<h1>
+    <nav>
+        <a routerLink="/home">{{ title }}</a>
+
+    </nav>    
+</h1>
+
+<div>
+    <button mat-flat-button color="primary" (click)="loadDataToMongoDb()">
+        load data to mongoDb
+      </button>
+</div>  
+
+<mat-slide-toggle (click)="login()">Log me!</mat-slide-toggle>
+
+<router-outlet></router-outlet>
+<!-- <app-assignments></app-assignments> -->
