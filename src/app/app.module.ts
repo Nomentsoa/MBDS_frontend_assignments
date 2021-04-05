@@ -30,6 +30,8 @@ import { AuthGuard } from './shared/auth.guard';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
 const routes:Routes = [
   {
     path:"",
@@ -70,7 +72,8 @@ const routes:Routes = [
     MatFormFieldModule, MatInputModule, MatDatepickerModule,
     MatNativeDateModule, MatListModule, MatCardModule, MatCheckboxModule,MatSlideToggleModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
