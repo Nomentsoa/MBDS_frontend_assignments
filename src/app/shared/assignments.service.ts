@@ -10,8 +10,8 @@ import { LoggingService } from './logging.service';
 })
 export class AssignmentsService {
   assignments: Assignment[];
-  uri = "http://localhost:8010/api/assignments"
-// uri ="https://backendangularnode.herokuapp.com/api/assignments"
+ // uri = "http://localhost:8010/api/assignments"
+ uri ="https://backendangularnode.herokuapp.com/api/assignments"
 
   constructor(private logginService: LoggingService, private http: HttpClient) { }
 
